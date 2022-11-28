@@ -6,5 +6,6 @@ if theta_2 > 0
 end
 q_1 = pz - cos(theta_2)*(198);
 q_3 = px - L3;
-theta_4 = atan(nx/ox);
+theta_4 = atan(nx/ox)*180/pi;
+theta_2 = theta_2 * 180/pi;
 DENAVIT_PARAMETERS = [q_1,theta_2,q_3,theta_4];
