@@ -170,3 +170,26 @@ eslabon_STL(TTR3,base_r2,'w');
 %-----------------------------------------------------
 
 coordenadas(A,T1,T2,T3,T4)
+
+%% ---------------CINEMÁTICA INVERSA ANALÍTICA
+
+DENAVIT_F=T4
+
+nx=DENAVIT_F(1,1);
+ny=DENAVIT_F(2,1);
+nz=DENAVIT_F(3,1);
+
+ox=DENAVIT_F(1,2);
+oy=DENAVIT_F(2,2);
+oz=DENAVIT_F(3,2);
+
+ax=DENAVIT_F(1,3);
+ay=DENAVIT_F(2,3);
+az=DENAVIT_F(3,3);
+
+px=DENAVIT_F(1,4);
+py=DENAVIT_F(2,4);
+pz=DENAVIT_F(3,4);
+
+%Movimientos en las Articulaciones
+Mov_Artic = CALCULOS_INVERSA(nx,ny,nz,ox,oy,oz,ax,ay,az,px,py,pz)
