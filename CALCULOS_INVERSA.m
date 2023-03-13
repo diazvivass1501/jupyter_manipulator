@@ -4,7 +4,7 @@ theta_2 = atan2(-ay,az);
 if theta_2 > 0
     theta_2 = theta_2 * -1;
 end
-q_1 = pz - cos(theta_2)*(198);
+q_1 = pz - cos(theta_2)*(160);
 q_3 = px - L3;
 theta_4 = atan2(nx,ox)*180/pi;
 theta_2 = theta_2 * 180/pi;
