@@ -21,7 +21,7 @@ Atheta2=(pp2)*(pi/180);
 % --------------------DIRECTA DEL MANIPULADOR JUPYTER----------------------
 %% __________________________ GEOMETRICO ______________________________
 
-[GEOMETRICO]=GEOMETRICO_JUPYTER(Apris2,L3,L4,Atheta1,Atheta2,Apris)
+[GEOMETRICO]=round(GEOMETRICO_JUPYTER(Apris2,L3,L4,Atheta1,Atheta2,Apris))
 
 %% ______________________________DENAVITH_______________________________
 %% -----------------Primera Articulacion Prismatica-------------------------
